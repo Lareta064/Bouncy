@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>BOUNCY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300,400,900" rel="stylesheet">
+    <link href="font/bigjhon/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="thankyou-page-screen">
+      <div class="page-content">
+        <h1 class="thankyou-text">Thank you! We will contact You!</h1>
+      </div>
+    </header>
+    <script>setTimeout('location.replace("//index.html/")', 3000);</script>
+    <div class="overlay"></div>
+    <div id="popup-window">
+      <form action="php/mail.php" method="POST" id="contact-form">
+        <h3 class="contact-form__head">contact us</h3>
+        <!-- Hidden Required Fields-->
+        <input type="hidden" name="project_name" value="Bouncy">
+        <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+        <input type="hidden" name="form_subject" value="Project Bouncy">
+        <!-- END Hidden Required Fields-->
+        <div class="form-fields">
+          <div class="form-field-name">
+            <input type="text" placeholder="Name" name="name" required id="name">
+          </div>
+          <div class="form-field-email">
+            <input type="text" placeholder="Email" name="email" required id="email">
+          </div>
+          <input type="hidden" name="email_from" value="hello@a0173988.xsph.ru">
+        </div>
+        <input type="submit" value="send">
+      </form>
+      <div id="answer">  </div>
+      <p class="form-close">+</p>
+      <!-- back-top-->
+    </div>
+    <section id="back-top"><a href="#top"><span><i class="fas fa-chevron-circle-up"></i></span></a></section>
+  </body>
+  <script src="libs/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/owl.carousel/owl.carousel.min.js"></script>
+  <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+  <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+  <script src="libs/vertical_carousel/jquery.jcarousel.min.js"></script>
+  <script src="libs/vertical_carousel/jcarousel.vertical.js"></script>
+  <script src="libs/jquery.validate/jquery.validate.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/accordeon.js"></script>
+  <script src="js/back-top.js"></script>
+</html>
